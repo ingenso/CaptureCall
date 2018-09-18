@@ -1,6 +1,6 @@
 {
     "name": "CaptureCall",
-    "description": "A Node-RED Project",
+    "description": "Created by Ingenso on behalf of LRS",
     "version": "0.0.1",
     "dependencies": {
         "json-db-node-red": "0.5.3",
