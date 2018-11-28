@@ -1,0 +1,73 @@
+/* Flash Patterns */
+.default {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+  
+
+}
+
+.V1 {
+  background-color: #ff0000;
+  color: #80ff80;
+  animation: checked linear 1s infinite;
+}
+
+.V2 {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+ }
+
+.V3 {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+}
+
+.B1 {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+}
+
+.B2 {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+}
+
+.B3 {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+}
+
+.VB1 {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+}
+
+.VB2 {  background-color: #808080;
+color: #ffffff;
+  animation:  linear 1s infinite;
+ }
+
+.VB3 {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+}
+
+.B1b3 {
+  background-color: #808080;
+  color: #ffffff;
+  animation:  linear 1s infinite;
+}
+
+@keyframes checked {
+0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
