@@ -1,269 +1,266 @@
 /*Header*/
-
 * {
-    box-sizing: border-box;
-    background: #456FA0;
-
+  box-sizing: border-box;
+  background: #456FA0;
 }
 
 html,
 body,
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
-    margin: 0px;
-    padding-left: 0px;
-    color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  margin: 0px;
+  padding-left: 0px;
+  color: white;
 }
 
 .heading {
-
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    padding: 10px;
-
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  padding: 10px;
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 .middle {
-    text-align: center;
+  text-align: center;
 }
 
 .right {
-    text-align: right;
+  text-align: right;
 }
 
 .clock {
-    font-size: 2vw;
-    padding-top: 10px;
-    font-weight: bold;
+  font-size: 2vw;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+/* Split the screen in half horizontally */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.one {
+  left: 0;
+}
+
+/* Control the right side */
+.two {
+  right: 0;
 }
 
 /*Table*/
-
 div .sort-by {
-    padding-right: 18px;
-    position: relative;
+  padding-right: 18px;
+  position: relative;
 }
 
 .sort-by:before,
 .sort-by:after {
-    border: 4px solid transparent;
-    content: "";
-    display: block;
-    height: 0;
-    right: 5px;
-    top: 50%;
-    position: absolute;
-    width: 0;
+  border: 4px solid transparent;
+  content: "";
+  display: block;
+  height: 0;
+  right: 5px;
+  top: 50%;
+  position: absolute;
+  width: 0;
 }
 
 .sort-by:before {
-    border-bottom-color: black;
-    margin-top: -9px;
+  border-bottom-color: black;
+  margin-top: -9px;
 }
 
 .sort-by:after {
-    border-top-color: black;
-    margin-top: 1px;
+  border-top-color: black;
+  margin-top: 1px;
 }
 
 /*General Body*/
-
 .wrapper {
-    display: grid;
+  display: grid;
+}
+
+/*Format the Main Body of the Page*/
+.mainBody {
+  text-align: center;
+}
+
+input, button, select {
+  border-radius: 100px
 
 }
 
-.wrapper2 {
-    display: grid;
-    justify-content: center;
 
+
+.wrapper2 {
+  display: grid;
+  justify-content: center;
 }
 
 .nested {
-    display: grid;
-    justify-content: space-evenly;
-    align-content: center;
-    grid-template-columns: repeat(6, 1.5fr);
-    font-size: 1.5vw;
-    text-align: center;
-    color: black;
-
+  display: grid;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-columns: repeat(6, 1.5fr);
+  font-size: 1.5vw;
+  text-align: center;
+  color: black;
 }
 
 .FADisplay {
-    display: grid;
-    align-content: center;
-    grid-template-columns: auto;
-    font-size: 1.5vw;
-    text-align: center;
-    color: black;
-    justify-content: center;
+  display: grid;
+  align-content: center;
+  grid-template-columns: auto;
+  font-size: 1.5vw;
+  text-align: center;
+  color: black;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 500px;
+  height: 125px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding: 0px;
+  margin: 10px;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  box-shadow: 5px 5px 10px black;
 
-    box-sizing: border-box;
-    width: 500px;
-    height: 125px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-    padding: 0px;
-    margin: 10px;
-    line-height: 1.5;
-    text-overflow: ellipsis;
-    box-shadow: 5px 5px 10px black;
-    background-color: red;
 }
 
 .nestedLog {
-    display: grid;
-    justify-content: space-evenly;
-    align-content: center;
-    grid-template-columns: repeat(14, 1fr);
-    font-size: 1vw;
-    text-align: center;
-    color: black;
+  display: grid;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-columns: repeat(14, 1fr);
+  font-size: 1vw;
+  text-align: center;
+  color: black;
 }
 
 .nested10 {
-    display: grid;
-    justify-content: space-evenly;
-    align-content: center;
-    grid-template-columns: repeat(10, 1fr);
-    font-size: 1vw;
-    text-align: center;
-    color: black;
+  display: grid;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-columns: repeat(10, 1fr);
+  font-size: 1vw;
+  text-align: center;
+  color: black;
 }
 
-.wrapper > div {
-    background: #eee;
+.nested3 {
+  display: grid;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 1vw;
+  text-align: center;
+  color: black;
 }
 
-.wrapper > div:nth-child(odd) {
-    background: #ddd;
+.nested2 {
+  display: grid;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 1vw;
+  text-align: center;
+  color: black;
 }
 
-.nested > div {
-    padding: 0.5em;
-    background-color: inherit;
+.wrapper>div {
+  background: #eee;
 }
 
-.nestedLog > div {
-    padding: 0.5em;
-    background-color: inherit;
+.wrapper>div:nth-child(odd) {
+  background: #ddd;
 }
 
-.nested10 > div {
-    padding: 0.5em;
-    background-color: inherit;
+.nested>div {
+  padding: 0.5em;
+  background-color: inherit;
+}
+
+.nestedLog>div {
+  padding: 0.5em;
+  background-color: inherit;
+}
+
+.nested10>div {
+  padding: 0.5em;
+  background-color: inherit;
 }
 
 .bold {
-    font-weight: bold;
-
+  font-weight: bold;
 }
 
 .flash {
-    color: red;
+  color: red;
 }
 
 .red {
-    color: red;
+  color: red;
 }
 
 a:link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a:visited {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 #notes {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    padding: 10px;
-    grid-gap: 25px;
-    justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+  grid-gap: 25px;
+  justify-content: space-evenly;
 }
 
 .tableDisplay {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    box-sizing: border-box;
-    width: 250px;
-    height: 125px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 24px;
-
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    line-height: 1.5;
-    text-overflow: ellipsis;
-    box-shadow: 5px 5px 10px black;
-    background-color: slategray;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 250px;
+  height: 125px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  box-shadow: 5px 5px 10px black;
+  background-color: slategray;
 }
 
 .tableDisplay:active {
-    background-color: darkblue;
-}
-
-
-/* Flash Patterns */
-
-.V1 {
-
-    animation-name: flash;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-play-state: running;
-
-}
-
-.V2 {}
-
-.V3 {}
-
-.B1 {}
-
-.B2 {}
-
-.B3 {}
-
-.VB1 {}
-
-.VB2 {}
-
-.VB3 {}
-
-.B1b3 {}
-
-
-@keyframes flash {
-    from {
-        color: black;
-    }
-
-    to {
-        color: white;
-    }
+  background-color: darkblue;
 }

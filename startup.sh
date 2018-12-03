@@ -1,0 +1,1 @@
+rtl_fm -f 459.100M -s 22050 -p 19 | multimon-ng -t raw -a POCSAG1200 -f alpha /dev/stdin  >> /var/www/pager/received.txt
