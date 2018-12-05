@@ -7,7 +7,9 @@
         "node-red-contrib-hostip": "0.0.3",
         "node-red-node-email": "0.1.29",
         "node-red-node-serialport": "0.6.8",
-        "node-red-node-sqlite": "0.3.5"
+        "node-red-node-sqlite": "0.3.5",
+        "node-red-contrib-moment": "3.0.1",
+        "node-red-dashboard": "2.9.8"
     },
     "node-red": {
         "settings": {
